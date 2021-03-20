@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  error:
+    include_message: always
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://localhost:30091/atmBank?createDatabaseIfNotExist=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+  flyway:
+    enabled: true
